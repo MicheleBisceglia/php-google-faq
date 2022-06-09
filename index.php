@@ -84,7 +84,16 @@ $text= [
       </main>
 
       <footer>
-
+        <ul>
+          <li><small>Google</small></li>
+          <li><small>Tutto suGoogle</small></li>
+          <li><small>Privacy</small></li>
+          <li><small>Termini</small></li>
+        </ul>
+        <div class="footer-input">
+          <input type="text"
+          placeholder="Italiano">
+        </div>
       </footer>
     </body>
     </html>

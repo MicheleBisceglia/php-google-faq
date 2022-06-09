@@ -1,9 +1,11 @@
+/*Reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Header */
 header {
   height: 100px;
   width: 100%;
@@ -46,8 +48,9 @@ header h1 {
   font-size: 25px;
   text-align: center;
 }
+/* /Header */
 
-
+/* Main */
 main {
   padding-top: 100px;
   width: 70%;
@@ -56,10 +59,30 @@ main {
 main h3 {
   margin: 20px 0 20px 0;
 }
+/* / Main */
 
+/* Footer */
 footer {
   height: 50px;
   width: 100%;
-  background-color: blue;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
 }
+
+footer ul {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 15px;
+}
+
+.footer-input {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  height: 15px;
+}
+/* / Footer */
 
