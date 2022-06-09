@@ -53,12 +53,24 @@ $text= [
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
       <title>Document</title>
     </head>
     <body>
-      <?php 
-      foreach($text as $item) {
-      echo "<h3>" . $item["question"] . "</h3>" . " " . "<p>" . $item["answer"]; "</p>" ;
-    } ?>
+      <header>
+
+      </header>
+    
+      <main>
+        <?php 
+        foreach($text as $item) {
+        echo "<h3>" . $item["question"] . "</h3>" . " " . "<p>" . $item["answer"]; "</p>" ;
+      } ?>
+
+      </main>
+
+      <footer>
+
+      </footer>
     </body>
     </html>
