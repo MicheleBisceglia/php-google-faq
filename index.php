@@ -60,57 +60,83 @@ $text= [
     ]
     ];
 ?>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <style>
-      @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
-      </style>
-      <link rel="stylesheet" href="css/style.css">
-      <title>Document</title>
-    </head>
-    <body>
-      <header>
+
+<!-- HTML -->  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+      
+<!-- header -->
+    <header>
+      <div class="logo">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Google_logo_%282010-2013%29.svg/2560px-Google_logo_%282010-2013%29.svg.png" alt="">
-          <div class="header-list">
-            <ul>
-              <li>Introduzione</li>
-              <li>Norme sulla privacy</li>
-              <li>Termini di servizio</li>
-              <li>Tecnologie</li>
-              <li class="active">Domande Frequenti</li>
-            </ul>
-          </div>
-          <div class="header-user">
-            <i class="fas fa-th"></i>
-            <span class="user">M</span>
-          </div>
-      </header>
-    
-      <main>
-       <?php 
-        foreach($text as $item) {
-        echo "<h3>" . $item["question"] . "</h3>" . " " . "<p>" . $item["answer"]; "</p>" ;
-      } ?> 
-
-      </main>
-
-      <footer>
+        <h2>Privacy e Termini</h2>
+      </div>
+      <div class="header-list">
         <ul>
-          <li><small>Google</small></li>
-          <li><small>Tutto suGoogle</small></li>
-          <li><small>Privacy</small></li>
-          <li><small>Termini</small></li>
+          <li>Introduzione</li>
+          <li>Norme sulla privacy</li>
+          <li>Termini di servizio</li>
+          <li>Tecnologie</li>
+          <li class="active">Domande Frequenti</li>
         </ul>
-        <div class="footer-input">
-          <input type="text"
-          placeholder="Italiano">
-        </div>
-      </footer>
-    </body>
-    </html>
+      </div>
+      <div class="header-user">
+        <i class="fas fa-th"></i>
+        <span class="user">M</span>
+      </div>
+    </header>
+<!-- /header -->  
+    
+<!-- main -->  
+  <main>
+    <?php 
+    foreach($text as $item) {
+    echo "<h3>" . $item["question"] . "</h3>" . " " . "<p>" . $item["answer"]; "</p>" ;
+   } ?> 
+  </main>
+<!-- /main -->  
+
+<!-- footer -->  
+  <footer>
+    <ul>
+      <li>
+        <small>Google</small>
+      </li>
+      <li>
+        <small>Tutto suGoogle</small>
+      </li>
+      <li>
+        <small>Privacy</small>
+      </li>
+      <li>
+        <small>Termini</small>
+      </li>
+    </ul>
+    <div class="footer-input">
+      <select name="Lenguage" id="">
+        <option value="">Italiano</option>
+          <option value="">Inglese</option>
+          <option value="">Tedesco</option>
+          <option value="">Francese</option>
+          <option value="">Spagnolo</option>
+        </select>
+      </div>
+    </footer>
+    <!-- /footer -->  
+
+  </body>
+</html>
+<!-- /HTML -->  
