@@ -4,7 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-family: 'Rajdhani', sans-serif;
+  color: black;
+}
 /* Header */
 header {
   height: 100px;
@@ -15,16 +18,20 @@ header {
   z-index: 99;
 }
 
-header h1 {
+header img {
   padding: 15px;
+  height: 50px;
+  object-fit: cover;
 }
+
+
 
 .header-list ul{
   width: 60%;
   display: flex;
   justify-content: space-around;
   list-style: none;
-  padding: 5px;
+  padding: 2px;
 }
 
 .header-user {
@@ -48,6 +55,10 @@ header h1 {
   font-size: 25px;
   text-align: center;
 }
+.active {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
 /* /Header */
 
 /* Main */
@@ -59,6 +70,7 @@ main {
 main h3 {
   margin: 20px 0 20px 0;
 }
+
 /* / Main */
 
 /* Footer */
